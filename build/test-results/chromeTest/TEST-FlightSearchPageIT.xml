@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FlightSearchPageIT" tests="1" skipped="0" failures="1" errors="0" timestamp="2018-08-06T14:26:32" hostname="VAA-MacBook-Air" time="29.73">
+  <properties/>
+  <testcase name="Flight Search Test Happy Path" classname="FlightSearchPageIT" time="29.73">
+    <failure message="Condition failed with Exception:&#10;&#10;at FlightSearchResultPage&#10;|&#10;groovy.lang.MissingMethodException: No signature of method: geb.navigator.NonEmptyNavigator.dynamicallyAdded() is applicable for argument types: (java.util.LinkedHashMap, FlightSearchResultPage$__clinit__closure1$_closure2) values: [[wait:true], FlightSearchResultPage$__clinit__closure1$_closure2@1f8236b9]&#10;" type="org.spockframework.runtime.ConditionFailedWithExceptionError">Condition failed with Exception:
+
+at FlightSearchResultPage
+|
+groovy.lang.MissingMethodException: No signature of method: geb.navigator.NonEmptyNavigator.dynamicallyAdded() is applicable for argument types: (java.util.LinkedHashMap, FlightSearchResultPage$__clinit__closure1$_closure2) values: [[wait:true], FlightSearchResultPage$__clinit__closure1$_closure2@1f8236b9]
+
+	at FlightSearchPageIT.Flight Search Test Happy Path(FlightSearchPageIT.groovy:18)
+Caused by: groovy.lang.MissingMethodException: No signature of method: geb.navigator.NonEmptyNavigator.dynamicallyAdded() is applicable for argument types: (java.util.LinkedHashMap, FlightSearchResultPage$__clinit__closure1$_closure2) values: [[wait:true], FlightSearchResultPage$__clinit__closure1$_closure2@1f8236b9]
+	at geb.navigator.NonEmptyNavigator.methodMissing(NonEmptyNavigator.groovy:568)
+	at geb.content.PageContentSupport.methodMissing(PageContentSupport.groovy:35)
+	at geb.Page.methodMissing(Page.groovy:112)
+	at FlightSearchResultPage._clinit__closure1(FlightSearchResultPage.groovy:6)
+	at FlightSearchResultPage._clinit__closure1(FlightSearchResultPage.groovy)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:245)
+	at geb.Page.getAtVerificationResult(Page.groovy:223)
+	at geb.Page.verifyAt(Page.groovy:194)
+	at geb.Browser.doAt(Browser.groovy:489)
+	at geb.Browser.at(Browser.groovy:347)
+	at geb.spock.GebSpec.methodMissing(GebSpec.groovy:60)
+	... 1 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db) on port 14448
+Only local connections are allowed.
+Aug 06, 2018 7:56:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>
