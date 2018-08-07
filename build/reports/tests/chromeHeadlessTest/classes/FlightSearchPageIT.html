@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class FlightSearchPageIT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class FlightSearchPageIT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; FlightSearchPageIT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.166s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="SouthWest Flight Search Oneway"></a>
+<h3 class="failures">SouthWest Flight Search Oneway</h3>
+<span class="code">
+<pre>org.openqa.selenium.SessionNotCreatedException: Unable to find a matching set of capabilities
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'VAA-MacBook-Air.local', ip: '2402:3a80:a7d:53:91e2:9458:4d6f:b6a9', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.5', java.version: '1.8.0_102'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:        0x106e5d54e - backtrace::backtrace::trace::hc694823f3e7463c0
+   1:        0x106e5d6ec - backtrace::capture::Backtrace::new::h23089c033eded8f0
+   2:        0x106df53af - geckodriver::marionette::MarionetteHandler::create_connection::hfc7af8bf299cf57b
+   3:        0x106dd0707 - _$LT$webdriver..server..Dispatcher$LT$T$C$$u20$U$GT$$GT$::run::h03bbbfe904a992bd
+   4:        0x106db6c97 - std::panicking::try::do_call::he6fd7abc59b6b346
+   5:        0x106f7a4ba - __rust_maybe_catch_panic
+   6:        0x106dc700c - _$LT$F$u20$as$u20$alloc..boxed..FnBox$LT$A$GT$$GT$::call_box::h8e002f7c448fbabb
+   7:        0x106f76684 - std::sys::imp::thread::Thread::new::thread_start::hba7593f2e1f1beb1
+   8:     0x7fff8ec1499c - _pthread_body
+   9:     0x7fff8ec14919 - _pthread_start
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:374)
+	at geb.Configuration.getDriver(Configuration.groovy:363)
+	at geb.Browser.getDriver(Browser.groovy:119)
+	at geb.navigator.factory.BrowserBackedNavigatorFactory.&lt;init&gt;(BrowserBackedNavigatorFactory.groovy:35)
+	at geb.Configuration.createNavigatorFactory(Configuration.groovy:427)
+	at geb.Browser.createNavigatorFactory(Browser.groovy:141)
+	at geb.Browser.getNavigatorFactory(Browser.groovy:129)
+	at geb.Page.init(Page.groovy:144)
+	at geb.Browser.createPage(Browser.groovy:908)
+	at geb.Browser.to(Browser.groovy:588)
+	at geb.Browser.to(Browser.groovy:577)
+	at geb.spock.GebSpec.methodMissing(GebSpec.groovy:60)
+	at FlightSearchPageIT.SouthWest Flight Search Oneway(FlightSearchPageIT.groovy:11)
+</pre>
+</span>
+<span class="code">
+<pre>org.openqa.selenium.SessionNotCreatedException: Unable to find a matching set of capabilities
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'VAA-MacBook-Air.local', ip: '2402:3a80:a7d:53:91e2:9458:4d6f:b6a9', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.5', java.version: '1.8.0_102'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:        0x10271f54e - backtrace::backtrace::trace::hc694823f3e7463c0
+   1:        0x10271f6ec - backtrace::capture::Backtrace::new::h23089c033eded8f0
+   2:        0x1026b73af - geckodriver::marionette::MarionetteHandler::create_connection::hfc7af8bf299cf57b
+   3:        0x102692707 - _$LT$webdriver..server..Dispatcher$LT$T$C$$u20$U$GT$$GT$::run::h03bbbfe904a992bd
+   4:        0x102678c97 - std::panicking::try::do_call::he6fd7abc59b6b346
+   5:        0x10283c4ba - __rust_maybe_catch_panic
+   6:        0x10268900c - _$LT$F$u20$as$u20$alloc..boxed..FnBox$LT$A$GT$$GT$::call_box::h8e002f7c448fbabb
+   7:        0x102838684 - std::sys::imp::thread::Thread::new::thread_start::hba7593f2e1f1beb1
+   8:     0x7fff8ec1499c - _pthread_body
+   9:     0x7fff8ec14919 - _pthread_start
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:374)
+	at geb.Configuration.getDriver(Configuration.groovy:363)
+	at geb.Browser.getDriver(Browser.groovy:119)
+	at geb.report.PageSourceReporter.getPageSource(PageSourceReporter.groovy:42)
+	at geb.report.PageSourceReporter.writePageSource(PageSourceReporter.groovy:38)
+	at geb.report.PageSourceReporter.writeReport(PageSourceReporter.groovy:29)
+	at geb.report.CompositeReporter.writeReport(CompositeReporter.groovy:31)
+	at geb.Browser.report(Browser.groovy:980)
+	at geb.spock.GebReportingSpec.report(GebReportingSpec.groovy:55)
+	at geb.spock.GebReportingSpec.cleanup(GebReportingSpec.groovy:42)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">SouthWest Flight Search Oneway</td>
+<td>3.166s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>1533644414517	geckodriver	INFO	geckodriver 0.18.0
+1533644414525	geckodriver	INFO	Listening on 127.0.0.1:12852
+1533644415579	geckodriver	INFO	geckodriver 0.18.0
+1533644415587	geckodriver	INFO	Listening on 127.0.0.1:36468
+1533644415930	geckodriver	INFO	geckodriver 0.18.0
+1533644415950	geckodriver	INFO	Listening on 127.0.0.1:47742
+1533644416425	geckodriver	INFO	geckodriver 0.18.0
+1533644416437	geckodriver	INFO	Listening on 127.0.0.1:22246
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.5</a> at Aug 7, 2018 5:50:17 PM</p>
+</div>
+</div>
+</body>
+</html>
