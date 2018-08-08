@@ -43,4 +43,6 @@ environments {
 
 // To run the tests with all browsers just run â€œ./gradlew testâ€�
 baseUrl = "https://southwest.com"
+reportsDir = new File("target/geb-reports")
+reportOnTestFailureOnly = true
 

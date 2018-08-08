@@ -33,7 +33,12 @@ class FlightSearchPageIT extends GebReportingSpec{
 		waitFor(30) {
 		 at FlightSearchResultPage
 		 }
+		 clickToPrice()
+		 
+		 	 
+		 clickToContinue()
 		 //flightPrice.click()
+		 
 		
 		
 	}
